@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Job Recommendation System</h1>
+    <div class="container">
+        <h2>Search by keyword...</h2>
+        <div class="search-keyword">
+            <input type="text" id="keyword" placeholder="Keyword">
+            <button onclick="searchByKeyword()">Search</button>
+        </div>
+
+        <h2>Search by choosing one or more...</h2>
+        <div class="search-options">
+            <select id="jobFamily">
+                <option value="">Select...</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+                <option value="sales">Sales</option>
+            </select>
+            <select id="jobLevel">
+                <option value="">Select...</option>
+                <option value="entry">Entry Level</option>
+                <option value="mid">Mid Level</option>
+                <option value="senior">Senior Level</option>
+            </select>
+            <select id="industry">
+                <option value="">Select...</option>
+                <option value="it">IT</option>
+                <option value="finance">Finance</option>
+                <option value="healthcare">Healthcare</option>
+            </select>
+            <select id="language">
+                <option value="">Select...</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+            </select>
+            <button onclick="searchByOptions()">Search</button>
+        </div>
+
+        <h2>Search by job by title...</h2>
+        <div class="search-title">
+            <select id="jobCategory">
+                <option value="">Select...</option>
+                <option value="developer">Developer</option>
+                <option value="analyst">Analyst</option>
+                <option value="manager">Manager</option>
+            </select>
+            <button onclick="searchByTitle()">Search</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
